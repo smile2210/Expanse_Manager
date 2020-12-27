@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Expense Tracker"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/White"
+            android:textSize="18dp"></TextView>
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:padding="13dp"
+            android:src="@drawable/ic_baseline_settings_24"
+            app:tint="@color/White"></ImageView>
+
+        <ImageView
+            android:id="@+id/popup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:padding="13dp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:tint="@color/White"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:numColumns="2"></GridView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

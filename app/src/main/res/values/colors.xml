@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">@android:color/background_dark</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="White">@android:color/white</color>
+    <color name="incomecolor">#80B71C1C</color>
+    <color name="expencecolor">#801A237E</color>
+    <color name="transcolor">#80558B2F</color>
+    <color name="reportscolor">#800277BD</color>
+    <color name="green">#558B2F</color>
+    <color name="red">#C62828</color>
+</resources>
